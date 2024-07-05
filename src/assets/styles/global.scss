@@ -16,6 +16,10 @@ html {
   font-size: 10px;
 }
 
+body {
+  background: $_custom_black;
+}
+
 button, a {
   outline: none;
   cursor: pointer;
