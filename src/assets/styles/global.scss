@@ -29,4 +29,12 @@ button, a {
 .container {
   width: calc(100% - (6.2rem * 2));
   margin: 0 auto;
+
+  @include _1280 {
+    width: calc(100% - (2rem * 2));
+  }
+
+  @include _768 {
+    width: calc(100% - (1.6rem * 2));
+  }
 }

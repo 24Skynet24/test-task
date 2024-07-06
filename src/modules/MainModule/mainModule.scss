@@ -5,6 +5,10 @@ main {
   .container {
     position: relative;
   }
+
+  @include _768 {
+    padding: 2rem 0 1.2rem;
+  }
 }
 
 h1 {
@@ -13,6 +17,34 @@ h1 {
   color: $white;
   text-transform: uppercase;
   margin-bottom: 4.4rem;
+
+  @include _1440 {
+    max-width: 70%;
+  }
+  @include _1368 {
+    max-width: 77%;
+  }
+  @include _1280 {
+    max-width: 65%;
+    font-size: 6.4rem;
+  }
+  @include _900 {
+    max-width: 100%;
+  }
+  @include _768 {
+    font-size: 5.2rem;
+    text-align: center;
+  }
+  @include _620 {
+    font-size: 4.8rem;
+  }
+  @include _450 {
+    font-size: 4.2rem;
+  }
+  @include _375 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
 
   span {
     background: $_gradient;
@@ -26,6 +58,18 @@ span.more_info {
   color: $_grey;
   margin-bottom: 8.8rem;
   display: block;
+
+  @include _768 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  @include _450 {
+    font-size: 2.4rem;
+  }
+  @include _375 {
+    font-size: 2rem;
+    margin-bottom: 3.2rem;
+  }
 }
 
 .ratings {
@@ -33,6 +77,16 @@ span.more_info {
   align-items: center;
   gap: 12.6rem;
   margin-bottom: 10rem;
+  max-width: 100%;
+
+  @include _768 {
+    width: 100%;
+    gap: 5rem;
+    justify-content: center;
+  }
+  @include _375 {
+    margin-bottom: 2.8rem;
+  }
 
   article {
     display: flex;
@@ -44,12 +98,28 @@ span.more_info {
       color: $white;
       text-transform: uppercase;
       line-height: 100%;
+
+      @include _450 {
+        font-size: 3.2rem;
+      }
+
+      @include _375 {
+        font-size: 2.8rem;
+      }
     }
 
     span {
       font-size: 1.8rem;
       color: $_white-30;
       line-height: 100%;
+
+      @include _450 {
+        font-size: 1.6rem;
+      }
+
+      @include _375 {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -59,6 +129,15 @@ span.more_info {
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  @include _768 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @include _375 {
+    margin-top: 1.8rem;
+  }
 }
 
 .absolute_img {
@@ -67,40 +146,73 @@ span.more_info {
   top: 0;
   width: 31.2rem;
   z-index: -1;
+
+  @include _900 {
+    width: 27rem;
+  }
+  @include _768 {
+    display: none;
+  }
+
 }
 img.btc {
   right: 5%;
+  @include _900 {
+    right: 1%;
+  }
 }
 img.lit {
   right: 20%;
   top: 50%;
   transform: translateY(-50%);
+  @include _900 {
+    right: 10%;
+  }
 }
 img.eth {
   right: 5%;
   top: 100%;
   transform: translateY(-100%);
+  @include _900 {
+    right: 1%;
+  }
 }
 
 .absolute_feedback {
   position: absolute;
   right: 0;
   top: 0;
+
+  @include _900 {
+    display: none;
+  }
 }
 .absolute_feedback.feed_0 {
   top: 15%;
   right: 1%;
+  @include _1280 {
+    right: 0;
+  }
 }
 .absolute_feedback.feed_1 {
   top: 36%;
   right: 10%;
+  @include _1280 {
+    right: 0;
+  }
 }
 .absolute_feedback.feed_2 {
   top: 55%;
   right: 2%;
+  @include _1280 {
+    right: 0;
+  }
 }
 .absolute_feedback.feed_3 {
   top: 74%;
   right: 11%;
+  @include _1280 {
+    right: 0;
+  }
 
 }

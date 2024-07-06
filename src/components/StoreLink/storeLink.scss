@@ -6,6 +6,11 @@ a.store_link {
   padding: .8rem 1.9rem .8rem 1.2rem;
   border-radius: 12px;
 
+  @include _375 {
+    width: 10rem;
+    padding: .8rem 1.6rem .7rem .8rem;
+  }
+
   .inner {
     width: 100%;
     display: flex;
@@ -16,6 +21,11 @@ a.store_link {
   .img {
     width: 2.4rem;
     height: 2.4rem;
+
+    @include _375 {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
 
     img {
       width: 100%;
@@ -33,12 +43,20 @@ a.store_link {
       color: $_white-40;
       font-size: 1.2rem;
       line-height: 100%;
+
+      @include _375 {
+        font-size: 1rem;
+      }
     }
 
     .title {
       color: $_white-40;
       font-size: 2rem;
       line-height: 100%;
+
+      @include _375 {
+        font-size: 1.4rem;
+      }
     }
   }
 }
