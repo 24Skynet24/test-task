@@ -1,6 +1,7 @@
 import "./feedback.scss"
+import {feedback} from "../../types/index"
 
-const FeedBack = ({ userImg, userName, userLink, userTxt }) => {
+const FeedBack = ({ userImg, userName, userLink, userTxt }: feedback) => {
     return (
         <article className="feedback">
             <div className="user">

@@ -1,8 +1,8 @@
 import "./button.scss"
 
-const ButtonGradient = (props) => {
+const ButtonGradient = () => {
     return (
-        <button {...props} className="button_gr">
+        <button className="button_gr">
             <span>Join Whatsapp</span>
         </button>
     )

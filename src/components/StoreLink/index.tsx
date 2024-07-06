@@ -1,6 +1,8 @@
 import "./storeLink.scss"
+import {storeLink} from "../../types/index"
 
-const StoreLink = ({ img, subTitle, title, link }) => {
+
+const StoreLink = ({ img, subTitle, title, link }: storeLink) => {
     return (
         <a href={link} target="_blank" className="store_link">
             <div className="inner">
